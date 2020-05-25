@@ -193,7 +193,7 @@ class MPT():
 
         trackers = self.run_tracker(dataloader)
         if self.display:
-            self.display_results(image_folder, trackers, output_file)
+            self.display_results(image_folder, trackers, None)#output_file)
 
         if self.output_format == 'dict':
             result = self.prepare_output_tracks(trackers)
